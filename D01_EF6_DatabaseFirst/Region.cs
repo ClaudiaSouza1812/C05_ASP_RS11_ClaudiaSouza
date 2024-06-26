@@ -24,6 +24,8 @@ namespace D01_EF6_DatabaseFirst
         public string RegionDescription { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+        // 1 Region can have many Territories: 1 Region -> n Territories
         public virtual ICollection<Territories> Territories { get; set; }
     }
 }

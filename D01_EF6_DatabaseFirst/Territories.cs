@@ -18,6 +18,7 @@ namespace D01_EF6_DatabaseFirst
         public string TerritoryDescription { get; set; }
         public int RegionID { get; set; }
     
+        // 1 Territory belongs to 1 Region: n Territory -> 1 Region
         public virtual Region Region { get; set; }
     }
 }

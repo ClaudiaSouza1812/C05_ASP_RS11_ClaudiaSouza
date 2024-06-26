@@ -13,10 +13,11 @@ namespace D01_EF6_DatabaseFirst
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class NorthwindEntities1 : DbContext
+    // DbContext representing the database in the memory
+    public partial class NorthwindEntities : DbContext
     {
-        public NorthwindEntities1()
-            : base("name=NorthwindEntities1")
+        public NorthwindEntities()
+            : base("name=NorthwindEntitiesCS")   // Connection string name
         {
         }
     
@@ -24,7 +25,8 @@ namespace D01_EF6_DatabaseFirst
         {
             throw new UnintentionalCodeFirstException();
         }
-    
+        
+        // DbSets representing the tables (objects) in the memory
         public virtual DbSet<Region> Region { get; set; }
         public virtual DbSet<Territories> Territories { get; set; }
     }
