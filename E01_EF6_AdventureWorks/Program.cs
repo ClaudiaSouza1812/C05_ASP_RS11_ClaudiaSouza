@@ -11,15 +11,21 @@ namespace E01_EF6_AdventureWorks
     {
         static void Main(string[] args)
         {
+
+            
             Utility.SetUnicodeConsole();
 
             using (var db = new AdventureWorks2019Entities())
             {
-
+                // create new category
+                // list categories before adding new category
+                // add category
+                // Save new category
+                // list updated categories
                 #region New Category
-
+                
                 ProductCategory category = new ProductCategory();
-
+                /*
                 var query01 = db.ProductCategory.Select(r => r).OrderBy(r => r.ProductCategoryID);
 
                 foreach (var item in query01)
@@ -36,7 +42,7 @@ namespace E01_EF6_AdventureWorks
                 var count01 = db.SaveChanges();
 
                 Utility.WriteMessage($"{count01} nova(s) categoria(s) gravada(s)", "", "\n\n");
-
+                */
                 var query02 = db.ProductCategory.Select(r => r).OrderBy(r => r.ProductCategoryID);
 
                 foreach (var item in query02)
@@ -44,12 +50,18 @@ namespace E01_EF6_AdventureWorks
                     Utility.WriteMessage($"{item.ProductCategoryID}, {item.Name}, {item.rowguid}, {item.ModifiedDate}", "", "\n");
                 }
 
+                Utility.PauseConsole();
                 #endregion
 
                 #region New Subcategory
+                // create new subcategory
+                // list subcategories before adding new subcategory
+                // add subcategory
+                // Save new subcategory
+                // list updated subcategories
 
                 ProductSubcategory subcategory = new ProductSubcategory();
-
+                /*
                 var query03 = db.ProductSubcategory.Select(t => t).OrderBy(t => t.ProductSubcategoryID);
 
                 foreach (var item in query03)
@@ -66,7 +78,7 @@ namespace E01_EF6_AdventureWorks
                 var count02 = db.SaveChanges();
 
                 Utility.WriteMessage($"{count02} nova(s) subcategoria(s) gravada(s)", "\n", "\n\n");
-
+                */
                 var query04 = db.ProductSubcategory.Select(t => t).OrderBy(t => t.ProductSubcategoryID);
 
                 foreach (var item in query04) 
