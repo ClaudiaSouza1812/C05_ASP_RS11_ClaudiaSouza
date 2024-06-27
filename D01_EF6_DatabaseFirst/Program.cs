@@ -64,6 +64,7 @@ namespace D01_EF6_DatabaseFirst
                 #endregion
 
 
+
                 Utility.TerminateConsole();
             }
         }

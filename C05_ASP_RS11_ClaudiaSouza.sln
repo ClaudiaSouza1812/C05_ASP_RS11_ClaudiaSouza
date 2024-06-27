@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D01_EF6_DatabaseFirst", "D0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D00_Utility", "..\..\..\..\..\RS11\02_OOP\03_CSharp_A\C04_CSA_RS11_ClaudiaSouza_A2_CSharpAdvanced\D00_Utility\D00_Utility.csproj", "{F9BDE1AA-9E8B-48CB-A240-4CF0C547EEF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E01_EF6_AdventureWorks", "E01_EF6_AdventureWorks\E01_EF6_AdventureWorks.csproj", "{16617CCA-06DD-4930-B49C-D246801087B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F9BDE1AA-9E8B-48CB-A240-4CF0C547EEF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9BDE1AA-9E8B-48CB-A240-4CF0C547EEF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9BDE1AA-9E8B-48CB-A240-4CF0C547EEF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16617CCA-06DD-4930-B49C-D246801087B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16617CCA-06DD-4930-B49C-D246801087B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16617CCA-06DD-4930-B49C-D246801087B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16617CCA-06DD-4930-B49C-D246801087B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
