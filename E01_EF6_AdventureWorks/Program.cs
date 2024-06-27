@@ -17,6 +17,7 @@ namespace E01_EF6_AdventureWorks
 
             using (var db = new AdventureWorks2019Entities())
             {
+                /*
                 // create new category
                 // list categories before adding new category
                 // add category
@@ -52,7 +53,7 @@ namespace E01_EF6_AdventureWorks
 
                 Utility.PauseConsole();
                 #endregion
-
+                */
                 #region New Subcategory
                 // create new subcategory
                 // list subcategories before adding new subcategory
@@ -69,7 +70,7 @@ namespace E01_EF6_AdventureWorks
                     Utility.WriteMessage($"{item.ProductSubcategoryID}, {item.Name}, {item.ProductCategoryID}, {item.rowguid}, {item.ModifiedDate}", "", "\n");
                 }
 
-                subcategory.Name = "Video Games";
+                subcategory.Name = "Board Games";
                 subcategory.ProductCategoryID = 5;  
                 subcategory.rowguid = Guid.NewGuid();
                 subcategory.ModifiedDate = DateTime.Now;
