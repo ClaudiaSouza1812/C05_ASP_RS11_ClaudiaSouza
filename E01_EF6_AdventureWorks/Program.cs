@@ -25,7 +25,7 @@ namespace E01_EF6_AdventureWorks
                 #region New Category
                 
                 ProductCategory category = new ProductCategory();
-                /*
+                
                 var query01 = db.ProductCategory.Select(r => r).OrderBy(r => r.ProductCategoryID);
 
                 foreach (var item in query01)
@@ -42,7 +42,7 @@ namespace E01_EF6_AdventureWorks
                 var count01 = db.SaveChanges();
 
                 Utility.WriteMessage($"{count01} nova(s) categoria(s) gravada(s)", "", "\n\n");
-                */
+                
                 var query02 = db.ProductCategory.Select(r => r).OrderBy(r => r.ProductCategoryID);
 
                 foreach (var item in query02)
@@ -61,7 +61,7 @@ namespace E01_EF6_AdventureWorks
                 // list updated subcategories
 
                 ProductSubcategory subcategory = new ProductSubcategory();
-                /*
+                
                 var query03 = db.ProductSubcategory.Select(t => t).OrderBy(t => t.ProductSubcategoryID);
 
                 foreach (var item in query03)
@@ -78,7 +78,7 @@ namespace E01_EF6_AdventureWorks
                 var count02 = db.SaveChanges();
 
                 Utility.WriteMessage($"{count02} nova(s) subcategoria(s) gravada(s)", "\n", "\n\n");
-                */
+                
                 var query04 = db.ProductSubcategory.Select(t => t).OrderBy(t => t.ProductSubcategoryID);
 
                 foreach (var item in query04) 
