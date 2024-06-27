@@ -10,7 +10,7 @@ namespace D02_EF6_CodeFirst
     {
         static void Main(string[] args)
         {
-
+            
         }
     }
 }
