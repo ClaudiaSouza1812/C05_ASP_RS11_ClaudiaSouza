@@ -8,5 +8,8 @@ namespace D01_EF6_DatabaseFirst.Interfaces
 {
     internal interface ITerritoryRepository
     {
+        void CreateTerritory(Territories territories, NorthwindEntities db);
+
+        void PrintTerritory(NorthwindEntities db);
     }
 }

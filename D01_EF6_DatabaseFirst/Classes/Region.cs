@@ -13,10 +13,17 @@ namespace D01_EF6_DatabaseFirst.Classes
     {
         public void CreateRegion(D01_EF6_DatabaseFirst.Region region, NorthwindEntities db)
         {
-            int id = db.Region.Max(r => r.RegionID);
-            region.RegionID =  id++;
+            region.RegionID = GenerateRegionId(db);
 
-            
+            region.RegionDescription = GetRegionDescription();
+        }
+
+        internal int GenerateRegionId(NorthwindEntities db)
+        {
+            int id = db.Region.Max(r => r.RegionID);
+            id++;
+
+            return id;
         }
 
         internal string GetRegionDescription()
@@ -25,13 +32,17 @@ namespace D01_EF6_DatabaseFirst.Classes
             string regionDescription = Console.ReadLine();
 
             return regionDescription;
-
         }
 
 
         public void PrintRegion(NorthwindEntities db)
         {
-            throw new NotImplementedException();
+            var query = db.Region.Select(r => r).OrderBy(r => r.RegionID);
+
+            foreach (var region in query)
+            {
+                Utility.WriteMessage($"{region.RegionID}, {region.RegionDescription}", "", "\n");
+            }
         }
     }
 }

@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using D00_Utility;
+using D01_EF6_DatabaseFirst.Classes;
 
 // When the database already exists, use the Database First approach
 namespace D01_EF6_DatabaseFirst
 {
-    internal class Program
+    internal class Program : Region
     {
         static void Main(string[] args)
         {
@@ -19,8 +20,9 @@ namespace D01_EF6_DatabaseFirst
 
                 Region region = new Region();
 
-                // ToDo MRS: add id automatically
-
+                CreateRegion(region, db);
+                
+                /*
                 region.RegionID = 5;
                 region.RegionDescription = "North";
 
@@ -38,7 +40,7 @@ namespace D01_EF6_DatabaseFirst
                 }
 
                 #endregion
-
+                */
                 #region New territory
 
                 Territories territories = new Territories();
