@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using D00_Utility;
 
+// When the database already exists, use the Database First approach
 namespace D01_EF6_DatabaseFirst
 {
     internal class Program

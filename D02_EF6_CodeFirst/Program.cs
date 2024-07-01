@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// When the database doesn't exist, use the Code First approach
+// Using the Code First approach, the database is created based on the classes
 namespace D02_EF6_CodeFirst
 {
     internal class Program
@@ -15,11 +17,12 @@ namespace D02_EF6_CodeFirst
         {
             Utility.SetUnicodeConsole();
 
+            // Declare and instantiate a new BlogContext object, which is a subclass of DbContext
             using (var db = new BlogContext())
             {
-                // Lado 1
+                // Side '1' of the relationship
                 #region Blog 
-
+                /*
                 // Create and save a new Blog
                 Blog blog = new Blog();
 
@@ -30,7 +33,6 @@ namespace D02_EF6_CodeFirst
                 db.SaveChanges();
 
                 // Display all Blogs from the database
-
                 var query01 = db.Blogs.Select(b => b).OrderBy(b => b.BlogId);
 
                 Utility.WriteTitle("Blogs", "", "\n\n");
@@ -39,14 +41,36 @@ namespace D02_EF6_CodeFirst
                 {
                     Utility.WriteMessage($"Blog: {item.BlogId} - {item.Name}", "", "\n");
                 }
-
+                */
                 #endregion
 
+                // Side 'N' of the relationship
                 #region Post
 
-                // Lado N
+                // Create and save two new Posts
 
-                // Create and save a new Post
+                Post post01 = new Post();
+                post01.BlogId = 1;
+                post01.Title = "Post 00001";
+                post01.Content = "Content 00001";
+                post01.Date = DateTime.Now;
+
+                Post post02 = new Post();
+                post02.BlogId = 1;
+                post02.Title = "Post 00002";
+                post02.Content = "Content 00002";
+                post02.Date = DateTime.Now;
+
+                db.Posts.Add(post01);
+                db.Posts.Add(post02);
+                db.SaveChanges();
+
+                var query02 = db.Posts.Select(p => p).OrderBy(p => p.PostId);
+
+                foreach (var post in query02)
+                {
+                    Utility.WriteMessage($"Post: {post.PostId} - {post.BlogId} - {post.Title} - {post.Content} - {post.Date}", "", "\n");
+                }
 
                 // Display all Posts from the database
 
