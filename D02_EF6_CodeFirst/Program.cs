@@ -22,26 +22,26 @@ namespace D02_EF6_CodeFirst
             {
                 // Side '1' of the relationship
                 #region Blog 
-                /*
+                
                 // Create and save a new Blog
                 Blog blog = new Blog();
 
                 blog.Name = "Blog 1";
 
                 db.Blogs.Add(blog);
-
                 db.SaveChanges();
 
-                // Display all Blogs from the database
+                // Select all Blogs from the database
                 var query01 = db.Blogs.Select(b => b).OrderBy(b => b.BlogId);
 
+                // Display all Blogs from the database
                 Utility.WriteTitle("Blogs", "", "\n\n");
 
                 foreach (var item in query01)
                 {
                     Utility.WriteMessage($"Blog: {item.BlogId} - {item.Name}", "", "\n");
                 }
-                */
+                
                 #endregion
 
                 // Side 'N' of the relationship
@@ -65,14 +65,17 @@ namespace D02_EF6_CodeFirst
                 db.Posts.Add(post02);
                 db.SaveChanges();
 
+                
+                // Select all Posts from the database
                 var query02 = db.Posts.Select(p => p).OrderBy(p => p.PostId);
 
+                // Display all Posts from the database
                 foreach (var post in query02)
                 {
                     Utility.WriteMessage($"Post: {post.PostId} - {post.BlogId} - {post.Title} - {post.Content} - {post.Date}", "", "\n");
                 }
 
-                // Display all Posts from the database
+                
 
                 #endregion
             }
