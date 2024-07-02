@@ -17,13 +17,13 @@ namespace E02_EF6_PublishingCompany.Class
 
         [Required]
         [Column(TypeName = "nvarchar")]
-        [StringLength(100)]
+        [StringLength(100, ErrorMessage = "Limite de 100 caracteres")]
         public string Title { get; set; }
 
         [Required]
         [Column(TypeName = "nvarchar")]
-        [StringLength(13)]
-        public string Isbn { get; set; }
+        [StringLength(13, ErrorMessage = "Limite de 13 caracteres.")]
+        public string ISBN { get; set; }
 
         #endregion
 

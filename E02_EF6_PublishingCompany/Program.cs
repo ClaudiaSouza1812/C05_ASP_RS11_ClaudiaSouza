@@ -63,7 +63,7 @@ namespace E02_EF6_PublishingCompany
                 book.BookId = 1;
                 book.PublishingCompanyId = 1;
                 book.Title = "Livro 1";
-                book.Isbn = "123456";
+                book.ISBN = "123456";
 
                 db.Books.Add(book);
                 db.SaveChanges();
@@ -72,7 +72,7 @@ namespace E02_EF6_PublishingCompany
 
                 foreach (var item in query02)
                 {
-                    Utility.WriteMessage($"Book: {item.BookId} - {item.PublishingCompany.PublishingCompanyName} - {item.Title} - {item.Isbn}", "", "\n");
+                    Utility.WriteMessage($"Book: {item.BookId} - {item.PublishingCompany.PublishingCompanyName} - {item.Title} - {item.ISBN}", "", "\n");
                 }
 
                 #endregion

@@ -17,7 +17,7 @@ namespace E02_EF6_PublishingCompany.Class
         
         [Required]
         [Column("Publisher", TypeName = "nvarchar")]
-        [StringLength(50)]
+        [StringLength(50, ErrorMessage = "Limite de 50 caracteres")]
         public string PublishingCompanyName { get; set; }
 
         #endregion
