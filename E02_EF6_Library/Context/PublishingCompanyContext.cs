@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace E02_EF6_Library.Context
 {
-    internal class LibraryContext : DbContext
+    internal class PublishingCompanyContext : DbContext
     {
-        public LibraryContext() : base("LibraryEntitiesCS")
+        public PublishingCompanyContext() : base("LibraryEntitiesCS")
         { 
         
         }
