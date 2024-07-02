@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E01_EF6_AdventureWorks", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D02_EF6_CodeFirst", "D02_EF6_CodeFirst\D02_EF6_CodeFirst.csproj", "{A690BE73-0064-4D84-A34E-7412C719D948}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E02_EF6_Library", "E02_EF6_Library\E02_EF6_Library.csproj", "{FF08A422-DF1F-4670-B312-9F7DA094D92A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E02_EF6_PublishingCompany", "E02_EF6_Library\E02_EF6_PublishingCompany.csproj", "{FF08A422-DF1F-4670-B312-9F7DA094D92A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

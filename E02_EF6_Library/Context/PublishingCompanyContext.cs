@@ -1,4 +1,4 @@
-﻿using E02_EF6_Library.Class;
+﻿using E02_EF6_PublishingCompany.Class;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E02_EF6_Library.Context
+namespace E02_EF6_PublishingCompany.Context
 {
     internal class PublishingCompanyContext : DbContext
     {
-        public PublishingCompanyContext() : base("LibraryEntitiesCS")
+        public PublishingCompanyContext() : base("PublishingCompanyCS")
         { 
         
         }

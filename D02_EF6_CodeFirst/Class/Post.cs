@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +16,15 @@ namespace D02_EF6_CodeFirst.Class
 
         public int PostId { get; set; } // PK
         public int BlogId { get; set; } // FK
+
+        [Required]
+        // [Column(TypeName = "nvarchar(100)")] // versão 4.7.2
+        [Column(TypeName = "nvarchar")]
+        [StringLength(100)]
         public string Title { get; set; }
+
+        [Column(TypeName = "nvarchar")]
+        [StringLength(200)]
         public string Content { get; set; }
         public DateTime Date { get; set; }
 

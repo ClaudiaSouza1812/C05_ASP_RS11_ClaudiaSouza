@@ -7,21 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E02_EF6_Library.Class
+namespace E02_EF6_PublishingCompany.Class
 {
     internal class PublishingCompany
     {
-        #region Properties
+        #region Scalar Properties
 
         public int PublishingCompanyId { get; set; }
         
         [Required]
+        [Column("Publisher", TypeName = "nvarchar")]
         [StringLength(50)]
-        [Column("Publisher", TypeName = "nvarchar(50)")]
         public string PublishingCompanyName { get; set; }
 
-        public virtual ICollection<Book> Book { get; set; }
+        #endregion
 
+        #region Navigation Properties   
+
+        // Relationship: PublishingCompany 1 - N Book
+        public virtual ICollection<Book> Book { get; set; }
 
         #endregion
     }

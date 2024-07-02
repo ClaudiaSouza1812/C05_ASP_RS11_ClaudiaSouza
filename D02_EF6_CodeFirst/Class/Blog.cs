@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace D02_EF6_CodeFirst.Class
 {
@@ -13,6 +15,10 @@ namespace D02_EF6_CodeFirst.Class
         // Scalar properties allow the entity to store simple values
 
         public int BlogId { get; set; }
+
+        [Required]
+        [Column(TypeName = "nvarchar")]
+        [StringLength(100)]
         public string Name { get; set; }
 
 
