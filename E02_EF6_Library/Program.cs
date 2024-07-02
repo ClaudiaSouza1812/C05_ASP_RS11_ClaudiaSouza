@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using D00_Utility;
 using E02_EF6_Library.Class;
 using E02_EF6_Library.Context;
-using System.ComponentModel.DataAnnotations;
 
 namespace E02_EF6_Library
 {
@@ -41,25 +40,25 @@ namespace E02_EF6_Library
             using (var db = new PublishingCompanyContext())
             {
                 #region PublishingCompany
-
+                /*
                 PublishingCompany publishingCompany = new PublishingCompany();
 
                 publishingCompany.PublishingCompanyName = "Editora 1";
 
                 db.PublishingCompanies.Add(publishingCompany);
                 db.SaveChanges();
-
+                */
                 var query01 = db.PublishingCompanies.Select(p => p).OrderBy(p => p.PublishingCompanyId);
 
                 foreach (var publishing in query01)
                 {
-                    Utility.WriteMessage($"Publishing Company: {publishing.PublishingCompanyId} - {publishing.PublishingCompanyName}");
+                    Utility.WriteMessage($"Publishing Company: {publishing.PublishingCompanyId} - {publishing.PublishingCompanyName}", "", "\n");
                 }
 
                 #endregion
 
                 #region Book
-
+                /*
                 Book book = new Book();
                 book.BookId = 1;
                 book.PublishingCompanyId = 1;
@@ -68,19 +67,17 @@ namespace E02_EF6_Library
 
                 db.Books.Add(book);
                 db.SaveChanges();
-
+                */
                 var query02 = db.Books.Select(b => b).OrderBy(b => b.BookId);
 
                 foreach (var item in query02)
                 {
-                    Utility.WriteMessage($"Book: {item.BookId} - {item.PublishingCompany} - {item.Title} - {item.Isbn}");
+                    Utility.WriteMessage($"Book: {item.BookId} - {item.PublishingCompany.PublishingCompanyName} - {item.Title} - {item.Isbn}", "", "\n");
                 }
 
                 #endregion
 
             }
-
-
 
             Utility.TerminateConsole();
         }
