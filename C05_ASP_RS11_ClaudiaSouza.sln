@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D02_EF6_CodeFirst", "D02_EF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E02_EF6_PublishingCompany", "E02_EF6_PublishingCompany\E02_EF6_PublishingCompany.csproj", "{FF08A422-DF1F-4670-B312-9F7DA094D92A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D03_MVC_.NET_Framework", "D03_MVC_.NET_Framework\D03_MVC_.NET_Framework.csproj", "{79A808EA-8F28-45EE-8478-9B64B31D2848}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{FF08A422-DF1F-4670-B312-9F7DA094D92A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF08A422-DF1F-4670-B312-9F7DA094D92A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF08A422-DF1F-4670-B312-9F7DA094D92A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79A808EA-8F28-45EE-8478-9B64B31D2848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79A808EA-8F28-45EE-8478-9B64B31D2848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79A808EA-8F28-45EE-8478-9B64B31D2848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79A808EA-8F28-45EE-8478-9B64B31D2848}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

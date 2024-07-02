@@ -36,7 +36,7 @@ namespace E02_EF6_PublishingCompany
             */
 
             Utility.SetUnicodeConsole();
-            /*
+            
             using (var db = new PublishingCompanyContext())
             {
                 #region PublishingCompany
@@ -78,7 +78,7 @@ namespace E02_EF6_PublishingCompany
                 #endregion
 
             }
-            */
+            
             Utility.TerminateConsole();
         }
     }

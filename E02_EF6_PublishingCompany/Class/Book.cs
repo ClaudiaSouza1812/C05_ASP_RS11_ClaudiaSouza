@@ -25,6 +25,10 @@ namespace E02_EF6_PublishingCompany.Class
         [StringLength(13, ErrorMessage = "Limite de 13 caracteres.")]
         public string ISBN { get; set; }
 
+        [Column(TypeName = "nvarchar")]
+        [StringLength(50, ErrorMessage = "Limite de 50 caracteres.")]
+        public string Type { get; set; }
+
         #endregion
 
         #region Navigation Properties
