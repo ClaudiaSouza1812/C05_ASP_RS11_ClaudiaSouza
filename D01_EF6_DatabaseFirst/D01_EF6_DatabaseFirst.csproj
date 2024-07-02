@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Region.cs" />
+    <Compile Include="Classes\Territories.cs" />
     <Compile Include="Interfaces\IRegionRepository.cs" />
     <Compile Include="Interfaces\ITerritoryRepository.cs" />
     <Compile Include="NorthwindModel.Context.cs">

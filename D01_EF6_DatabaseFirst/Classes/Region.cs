@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 using D01_EF6_DatabaseFirst;
 using D00_Utility;
 
-namespace D01_EF6_DatabaseFirst.Classes
+namespace D01_EF6_DatabaseFirst
 {
-    internal class Region : IRegionRepository
+    public partial class Region : IRegionRepository
     {
-        public void CreateRegion(D01_EF6_DatabaseFirst.Region region, NorthwindEntities db)
+        public void CreateRegion(Region region, NorthwindEntities db)
         {
             region.RegionID = GenerateRegionId(db);
 
@@ -41,7 +41,7 @@ namespace D01_EF6_DatabaseFirst.Classes
 
             foreach (var region in query)
             {
-                Utility.WriteMessage($"{region.RegionID}, {region.RegionDescription}", "", "\n");
+                Utility.WriteMessage($"Region: {region.RegionID}, {region.RegionDescription}", "", "\n");
             }
         }
     }

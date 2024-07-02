@@ -12,12 +12,16 @@ namespace D01_EF6_DatabaseFirst
     using System;
     using System.Collections.Generic;
     
+    // Partial class: allows you to split a class or a struct into two or more classes in separate source files
     public partial class Territories
     {
+        // Properties
         public string TerritoryID { get; set; }
-        public string TerritoryDescription { get; set; }
         public int RegionID { get; set; }
+        public string TerritoryDescription { get; set; }
+        
     
+        // Navigation property for related Region entity
         // 1 Territory belongs to 1 Region: n Territory -> 1 Region
         public virtual Region Region { get; set; }
     }

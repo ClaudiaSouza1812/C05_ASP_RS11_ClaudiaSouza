@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using D00_Utility;
-using D01_EF6_DatabaseFirst.Classes;
+using D01_EF6_DatabaseFirst;
 
 // When the database already exists, use the Database First approach
 namespace D01_EF6_DatabaseFirst
 {
-    internal class Program : Region
+    internal class Program
     {
         static void Main(string[] args)
         {
@@ -20,49 +20,31 @@ namespace D01_EF6_DatabaseFirst
 
                 Region region = new Region();
 
-                CreateRegion(region, db);
+                region.CreateRegion(region, db);
                 
-                /*
-                region.RegionID = 5;
-                region.RegionDescription = "North";
-
                 db.Region.Add(region);
 
                 var count01 = db.SaveChanges();
 
                 Utility.WriteMessage($"{count01} nova(s) região(ões) gravada(s)", "", "\n\n");
 
-                var query01 = db.Region.Select(r => r).OrderBy(r => r.RegionID);
-
-                foreach (var item in query01)
-                {
-                    Utility.WriteMessage($"{item.RegionID}, {item.RegionDescription}", "", "\n");
-                }
+                region.PrintRegion(db);
 
                 #endregion
-                */
+
                 #region New territory
 
                 Territories territories = new Territories();
 
-                territories.TerritoryID = "00001";
-                territories.TerritoryDescription = "Espinho";
-
-                // ToDo MRS: this must be the id of the region created above
-                territories.RegionID = 5;
-
+                territories.CreateTerritory(territories, db, region);
+                
                 db.Territories.Add(territories);
 
                 var count02 = db.SaveChanges();
 
                 Utility.WriteMessage($"{count02} novo(s) territorio(s) gravado(s)", "\n", "\n\n");
 
-                var query02 = db.Territories.Select(t => t).OrderBy(t => t.TerritoryID);
-
-                foreach (var item in query02)
-                {
-                    Utility.WriteMessage($"{item.TerritoryID}, {item.TerritoryDescription}, {item.RegionID}", "", "\n");
-                }
+                territories.PrintTerritory(db);
 
                 #endregion
 

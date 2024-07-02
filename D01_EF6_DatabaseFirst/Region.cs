@@ -12,19 +12,25 @@ namespace D01_EF6_DatabaseFirst
     using System;
     using System.Collections.Generic;
     
+    // Partial class: allows you to split a class or a struct into two or more classes in separate source files
     public partial class Region
     {
+        // This SuppressMessage attribute suppresses a Code Analysis warning that is not applicable to this file
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        // This constructor initializes the Territories property as a new HashSet collection
         public Region()
         {
             this.Territories = new HashSet<Territories>();
         }
-    
+        
+        // Properties
         public int RegionID { get; set; }
         public string RegionDescription { get; set; }
-    
+        
+        // This SuppressMessage attribute suppresses a Code Analysis warning that is not applicable to this file
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
 
+        // Navigation property: allows you to navigate from one entity to another
         // 1 Region can have many Territories: 1 Region -> n Territories
         public virtual ICollection<Territories> Territories { get; set; }
     }
