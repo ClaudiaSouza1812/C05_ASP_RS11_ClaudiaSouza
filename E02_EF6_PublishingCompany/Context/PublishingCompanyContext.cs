@@ -22,5 +22,6 @@ namespace E02_EF6_PublishingCompany.Context
 
         public virtual DbSet<PublishingCompany> PublishingCompanies { get; set; }
         public virtual DbSet<Book> Books { get; set; }
+        public virtual DbSet<Genre> Genres { get; set; }
     }
 }

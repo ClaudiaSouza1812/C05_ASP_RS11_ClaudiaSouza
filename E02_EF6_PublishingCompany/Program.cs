@@ -39,6 +39,7 @@ namespace E02_EF6_PublishingCompany
             
             using (var db = new PublishingCompanyContext())
             {
+                /*
                 #region PublishingCompany
                 
                 PublishingCompany publishingCompany = new PublishingCompany();
@@ -76,9 +77,34 @@ namespace E02_EF6_PublishingCompany
                 }
 
                 #endregion
+                */
 
+                #region Genre
+
+                Genre genre01 = new Genre();
+                genre01.GenreName = "Romance";
+                db.Genres.Add(genre01);
+
+                Genre genre02 = new Genre();
+                genre02.GenreName = "Ficção";
+                db.Genres.Add(genre02);
+
+                Genre genre03 = new Genre();
+                genre03.GenreName = "Terror";
+                db.Genres.Add(genre03);
+
+                db.SaveChanges();
+
+                var query03 = db.Genres.Select(g => g).OrderBy(g => g.GenreId);
+
+                foreach (var genre in query03)
+                {
+                    Utility.WriteMessage($"Genre: {genre.GenreId} - {genre.GenreName}");
+                }
+
+                #endregion
             }
-            
+
             Utility.TerminateConsole();
         }
     }

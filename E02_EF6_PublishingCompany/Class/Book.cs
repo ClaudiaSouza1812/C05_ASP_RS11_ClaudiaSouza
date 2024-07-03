@@ -14,6 +14,7 @@ namespace E02_EF6_PublishingCompany.Class
 
         public int BookId { get; set; }
         public int PublishingCompanyId { get; set; }
+        public int GenreId { get; set; }
 
         [Required]
         [Column(TypeName = "nvarchar")]
@@ -25,15 +26,13 @@ namespace E02_EF6_PublishingCompany.Class
         [StringLength(13, ErrorMessage = "Limite de 13 caracteres.")]
         public string ISBN { get; set; }
 
-        [Column(TypeName = "nvarchar")]
-        [StringLength(50, ErrorMessage = "Limite de 50 caracteres.")]
-        public string Type { get; set; }
-
         #endregion
 
         #region Navigation Properties
         // Relationship: Book 1 - 1 PublishingCompany
+        // Relationship: Book 1 - 1 Type
         public virtual PublishingCompany PublishingCompany { get; set; }
+        public virtual Genre Genre { get; set; }
 
         #endregion
 

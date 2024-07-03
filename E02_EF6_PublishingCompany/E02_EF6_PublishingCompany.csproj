@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Class\Book.cs" />
     <Compile Include="Class\PublishingCompany.cs" />
+    <Compile Include="Class\Genre.cs" />
     <Compile Include="Context\PublishingCompanyContext.cs" />
     <Compile Include="Migrations\202407022019207_01_initial.cs" />
     <Compile Include="Migrations\202407022019207_01_initial.Designer.cs">
