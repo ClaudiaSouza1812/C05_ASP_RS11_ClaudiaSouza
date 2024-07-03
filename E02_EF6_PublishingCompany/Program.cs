@@ -99,7 +99,7 @@ namespace E02_EF6_PublishingCompany
 
                 foreach (var genre in query03)
                 {
-                    Utility.WriteMessage($"Genre: {genre.GenreId} - {genre.GenreName}");
+                    Utility.WriteMessage($"Genre: {genre.GenreId} - {genre.GenreName}", "", "\n");
                 }
 
                 #endregion

@@ -57,13 +57,9 @@
     <Compile Include="Class\PublishingCompany.cs" />
     <Compile Include="Class\Genre.cs" />
     <Compile Include="Context\PublishingCompanyContext.cs" />
-    <Compile Include="Migrations\202407022019207_01_initial.cs" />
-    <Compile Include="Migrations\202407022019207_01_initial.Designer.cs">
-      <DependentUpon>202407022019207_01_initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202407022040214_02_book_add_column.cs" />
-    <Compile Include="Migrations\202407022040214_02_book_add_column.Designer.cs">
-      <DependentUpon>202407022040214_02_book_add_column.cs</DependentUpon>
+    <Compile Include="Migrations\202407031747101_01_genre_table.cs" />
+    <Compile Include="Migrations\202407031747101_01_genre_table.Designer.cs">
+      <DependentUpon>202407031747101_01_genre_table.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -80,11 +76,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202407022019207_01_initial.resx">
-      <DependentUpon>202407022019207_01_initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202407022040214_02_book_add_column.resx">
-      <DependentUpon>202407022040214_02_book_add_column.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202407031747101_01_genre_table.resx">
+      <DependentUpon>202407031747101_01_genre_table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
