@@ -39,7 +39,7 @@ namespace E02_EF6_PublishingCompany
             
             using (var db = new PublishingCompanyContext())
             {
-                /*
+                
                 #region PublishingCompany
                 
                 PublishingCompany publishingCompany = new PublishingCompany();
@@ -77,7 +77,7 @@ namespace E02_EF6_PublishingCompany
                 }
 
                 #endregion
-                */
+                
 
                 #region Genre
 
