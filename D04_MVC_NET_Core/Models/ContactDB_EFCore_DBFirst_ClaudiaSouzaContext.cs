@@ -11,13 +11,14 @@ namespace D04_MVC_NET_Core.Models
         {
         }
 
-        public ContactDB_EFCore_DBFirst_ClaudiaSouzaContext(DbContextOptions<ContactDB_EFCore_DBFirst_ClaudiaSouzaContext> options)
+        public ContactDB_EFCore_DBFirst_ClaudiaSouzaContext(DbContextOptions<ContactDB_EFCore_DBFirst_ClaudiaSouzaContext> options) // Conection string
             : base(options)
         {
         }
 
         public virtual DbSet<Address> Addresses { get; set; } = null!;
         public virtual DbSet<Contact> Contacts { get; set; } = null!;
+
         /*
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -27,8 +28,9 @@ namespace D04_MVC_NET_Core.Models
                 optionsBuilder.UseSqlServer("Server=Formacaolimpa;Database= ContactDB_EFCore_DBFirst_ClaudiaSouza;Trusted_Connection=True;");
             }
             
-    }
-*/
+        }
+        */
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Address>(entity =>
