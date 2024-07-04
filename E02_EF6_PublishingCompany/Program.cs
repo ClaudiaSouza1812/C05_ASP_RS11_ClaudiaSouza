@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using D00_Utility;
 using E02_EF6_PublishingCompany.Class;
 using E02_EF6_PublishingCompany.Context;
+using E02_EF6_PublishingCompany.Interfaces;
 
 namespace E02_EF6_PublishingCompany
 {
@@ -39,9 +40,16 @@ namespace E02_EF6_PublishingCompany
             
             using (var db = new PublishingCompanyContext())
             {
-                
+
                 #region PublishingCompany
-                
+
+                PublishingCompany publishingCompany = new PublishingCompany();
+
+                publishingCompany.CreatePublishingCompany(publishingCompany, db);
+
+                db.PublishingCompanies.Add(publishingCompany);
+                db.SaveChanges();
+
                 var query01 = db.PublishingCompanies.Select(p => p).OrderBy(p => p.PublishingCompanyId);
 
                 foreach (var publishing in query01)

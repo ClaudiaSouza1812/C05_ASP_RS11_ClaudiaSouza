@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,15 +33,13 @@ namespace E02_EF6_PublishingCompany.Class
 
         #region Methods
 
-        public void CreatePublishingCompany(PublishingCompany publishingCompany)
+        public void CreatePublishingCompany(PublishingCompany publishingCompany, DbSet db)
         {
             
-            PublishingCompany publishingCompany = new PublishingCompany();
 
             publishingCompany.PublishingCompanyName = "Editora 1";
 
-            db.PublishingCompanies.Add(publishingCompany);
-            db.SaveChanges();
+            
                 
         }
 
