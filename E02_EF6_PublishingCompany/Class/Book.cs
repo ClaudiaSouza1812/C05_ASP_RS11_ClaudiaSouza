@@ -36,9 +36,5 @@ namespace E02_EF6_PublishingCompany.Class
 
         #endregion
 
-        
-
-        
-
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using E02_EF6_PublishingCompany.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace E02_EF6_PublishingCompany.Class
 {
-    internal class PublishingCompany
+    internal class PublishingCompany : IPublishingCompanyRepository
     {
         #region Scalar Properties
 
@@ -28,5 +29,27 @@ namespace E02_EF6_PublishingCompany.Class
         public virtual ICollection<Book> Book { get; set; }
 
         #endregion
+
+        #region Methods
+
+        public void CreatePublishingCompany(PublishingCompany publishingCompany)
+        {
+            
+            PublishingCompany publishingCompany = new PublishingCompany();
+
+            publishingCompany.PublishingCompanyName = "Editora 1";
+
+            db.PublishingCompanies.Add(publishingCompany);
+            db.SaveChanges();
+                
+        }
+
+        public void ShowPublishingCompany()
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion
+
     }
 }

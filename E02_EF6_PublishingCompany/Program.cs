@@ -42,13 +42,6 @@ namespace E02_EF6_PublishingCompany
                 
                 #region PublishingCompany
                 
-                PublishingCompany publishingCompany = new PublishingCompany();
-
-                publishingCompany.PublishingCompanyName = "Editora 1";
-
-                db.PublishingCompanies.Add(publishingCompany);
-                db.SaveChanges();
-                
                 var query01 = db.PublishingCompanies.Select(p => p).OrderBy(p => p.PublishingCompanyId);
 
                 foreach (var publishing in query01)
@@ -58,29 +51,8 @@ namespace E02_EF6_PublishingCompany
 
                 #endregion
 
-                #region Book
-                
-                Book book = new Book();
-                book.BookId = 1;
-                book.PublishingCompanyId = 1;
-                book.Title = "Livro 1";
-                book.ISBN = "123456";
-
-                db.Books.Add(book);
-                db.SaveChanges();
-                
-                var query02 = db.Books.Select(b => b).OrderBy(b => b.BookId);
-
-                foreach (var item in query02)
-                {
-                    Utility.WriteMessage($"Book: {item.BookId} - {item.PublishingCompany.PublishingCompanyName} - {item.Title} - {item.ISBN}", "", "\n");
-                }
-
-                #endregion
-                
-
                 #region Genre
-
+                /*
                 Genre genre01 = new Genre();
                 genre01.GenreName = "Romance";
                 db.Genres.Add(genre01);
@@ -94,7 +66,7 @@ namespace E02_EF6_PublishingCompany
                 db.Genres.Add(genre03);
 
                 db.SaveChanges();
-
+                */
                 var query03 = db.Genres.Select(g => g).OrderBy(g => g.GenreId);
 
                 foreach (var genre in query03)
@@ -103,6 +75,30 @@ namespace E02_EF6_PublishingCompany
                 }
 
                 #endregion
+
+                #region Book
+                /*
+                Book book = new Book();
+                book.BookId = 1;
+                book.PublishingCompanyId = 1;
+                book.GenreId = 1;
+                book.Title = "Livro 1";
+                book.ISBN = "123456";
+
+                db.Books.Add(book);
+                db.SaveChanges();
+                */
+                var query02 = db.Books.Select(b => b).OrderBy(b => b.BookId);
+
+                foreach (var item in query02)
+                {
+                    Utility.WriteMessage($"Book: {item.BookId} - {item.Title} - {item.ISBN} - {item.PublishingCompany.PublishingCompanyName} - {item.Genre.GenreName}", "", "\n");
+                }
+
+                #endregion
+                
+
+               
             }
 
             Utility.TerminateConsole();
