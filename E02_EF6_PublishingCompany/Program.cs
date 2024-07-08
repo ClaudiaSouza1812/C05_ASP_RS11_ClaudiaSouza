@@ -7,6 +7,7 @@ using D00_Utility;
 using E02_EF6_PublishingCompany.Class;
 using E02_EF6_PublishingCompany.Context;
 using E02_EF6_PublishingCompany.Interfaces;
+using E02_EF6_PublishingCompany.Migrations;
 
 namespace E02_EF6_PublishingCompany
 {
@@ -36,6 +37,7 @@ namespace E02_EF6_PublishingCompany
                 4. DbContext
             */
 
+         
             
         }
     }

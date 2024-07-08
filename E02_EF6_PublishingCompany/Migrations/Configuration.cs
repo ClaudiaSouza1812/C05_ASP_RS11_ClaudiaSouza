@@ -48,27 +48,14 @@
                 #endregion
 
                 #region Book
-                /*
+                
                 Book book = new Book();
-                book.BookId = 1;
-                book.PublishingCompanyId = 1;
-                book.GenreId = 1;
-                book.Title = "Livro 1";
-                book.ISBN = "123456";
 
-                db.Books.Add(book);
-                db.SaveChanges();
-                */
-                var query02 = db.Books.Select(b => b).OrderBy(b => b.BookId);
-
-                foreach (var item in query02)
-                {
-                    Utility.WriteMessage($"Book: {item.BookId} - {item.Title} - {item.ISBN} - {item.PublishingCompany.PublishingCompanyName} - {item.Genre.GenreName}", "", "\n");
-                }
+                book.CreateBook(book, publishingCompany, genre, db);
+                
+                book.ShowBook(db);
 
                 #endregion
-
-
 
             }
 
