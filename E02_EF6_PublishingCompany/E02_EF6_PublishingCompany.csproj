@@ -64,6 +64,10 @@
     <Compile Include="Migrations\202407031747101_01_genre_table.Designer.cs">
       <DependentUpon>202407031747101_01_genre_table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202407081516120_Seed_DBFeed.cs" />
+    <Compile Include="Migrations\202407081516120_Seed_DBFeed.Designer.cs">
+      <DependentUpon>202407081516120_Seed_DBFeed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,6 +85,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202407031747101_01_genre_table.resx">
       <DependentUpon>202407031747101_01_genre_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407081516120_Seed_DBFeed.resx">
+      <DependentUpon>202407081516120_Seed_DBFeed.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
