@@ -15,7 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E02_EF6_PublishingCompany",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D03_MVC_.NET_Framework", "D03_MVC_.NET_Framework\D03_MVC_.NET_Framework.csproj", "{79A808EA-8F28-45EE-8478-9B64B31D2848}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D04_MVC_NET_Core", "D04_MVC_NET_Core\D04_MVC_NET_Core.csproj", "{246D797A-345F-473B-806A-B999B83B9D28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "D04_MVC_NET_Core", "D04_MVC_NET_Core\D04_MVC_NET_Core.csproj", "{246D797A-345F-473B-806A-B999B83B9D28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D05_ASP_Empty_.NET_Framework", "D05_ASP_Empty_.NET_Framework\D05_ASP_Empty_.NET_Framework.csproj", "{AF565C80-6E70-45F3-ABFD-7BE1CC44BE9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{246D797A-345F-473B-806A-B999B83B9D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{246D797A-345F-473B-806A-B999B83B9D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{246D797A-345F-473B-806A-B999B83B9D28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF565C80-6E70-45F3-ABFD-7BE1CC44BE9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF565C80-6E70-45F3-ABFD-7BE1CC44BE9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF565C80-6E70-45F3-ABFD-7BE1CC44BE9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF565C80-6E70-45F3-ABFD-7BE1CC44BE9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
