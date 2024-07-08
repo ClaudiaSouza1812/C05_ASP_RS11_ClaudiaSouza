@@ -67,13 +67,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="html\D01_HTML_PageStructureHTML5.html" />
+    <Content Include="html\D01_HTML_PageStructureHTML5_v1.html" />
+    <Content Include="html\D01_HTML_PageStructureHTML5_v2.html" />
+    <Content Include="html\D02_HTML_Links.html" />
+    <Content Include="media\img01.jpg" />
+    <Content Include="media\La Casa De Papel - Bella Ciao [Lyrics] %28Money Heist%29 [TubeRipper.cc].m4a" />
+    <Content Include="media\mov_bbb.mp4" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="media\Apontamentos-MRS_HTML5.pdf" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -91,7 +97,6 @@
   <ItemGroup>
     <Folder Include="css\" />
     <Folder Include="js\" />
-    <Folder Include="media\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
