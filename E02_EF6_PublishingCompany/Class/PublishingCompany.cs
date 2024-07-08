@@ -1,4 +1,6 @@
-﻿using E02_EF6_PublishingCompany.Interfaces;
+﻿using D00_Utility;
+using E02_EF6_PublishingCompany.Context;
+using E02_EF6_PublishingCompany.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,19 +35,26 @@ namespace E02_EF6_PublishingCompany.Class
 
         #region Methods
 
-        public void CreatePublishingCompany(PublishingCompany publishingCompany, DbSet db)
+        public void CreatePublishingCompany(PublishingCompany publishingCompany, PublishingCompanyContext db)
         {
-            
+            Utility.WriteTitle("Create Publishing Company", "", "\n\n"); 
 
-            publishingCompany.PublishingCompanyName = "Editora 1";
+            Utility.WriteMessage("Enter the name of the publishing company: ", "", "");
 
-            
-                
+            publishingCompany.PublishingCompanyName = Console.ReadLine();
+
+            db.PublishingCompanies.Add(publishingCompany);
+            db.SaveChanges();
         }
 
-        public void ShowPublishingCompany()
+        public void ShowPublishingCompany(PublishingCompanyContext db)
         {
-            throw new NotImplementedException();
+            var query = db.PublishingCompanies.Select(p => p).OrderBy(p => p.PublishingCompanyId);
+
+            foreach (var publishing in query)
+            {
+                Utility.WriteMessage($"Publishing Company: {publishing.PublishingCompanyId} - {publishing.PublishingCompanyName}", "", "\n");
+            }
         }
 
         #endregion
