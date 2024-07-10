@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\D03_CSS_External.css" />
+    <Content Include="css\D04_CSS_LayoutFloat.css" />
     <Content Include="html\D01_HTML_PageStructureHTML5_v1.html" />
     <Content Include="html\D01_HTML_PageStructureHTML5_v2.html" />
     <Content Include="html\D02_HTML_Links&amp;Media.html" />
