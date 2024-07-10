@@ -1,0 +1,31 @@
+﻿/*
+    CSS SELECTORS
+
+    Element Selector
+    Class Selector
+    ID Selector
+    Universal Selector
+    Group Selector
+    Descendant Selector
+    Child Selector
+    Adjacent Sibling Selector
+    Attribute Selector
+    Pseudo-class Selector
+    Pseudo-element Selector
+*/
+
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    color: aquamarine;
+    background-color: black;
+}
+
+h1 {
+    color: red;
+}
+
+p {
+    color: yellow;
+}
