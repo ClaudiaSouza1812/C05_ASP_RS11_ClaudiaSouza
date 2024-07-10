@@ -72,6 +72,7 @@
     <Content Include="html\D01_HTML_PageStructureHTML5_v2.html" />
     <Content Include="html\D02_HTML_Links&amp;Media.html" />
     <Content Include="html\D03_CSS_External.html" />
+    <Content Include="html\D04_CSS_LayoutFloat.html" />
     <Content Include="media\img01.jpg" />
     <Content Include="media\La Casa De Papel - Bella Ciao [Lyrics] %28Money Heist%29 [TubeRipper.cc].m4a" />
     <Content Include="media\mov_bbb.mp4" />
