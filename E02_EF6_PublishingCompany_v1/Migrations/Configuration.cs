@@ -1,8 +1,8 @@
-﻿namespace E02_EF6_PublishingCompany.Migrations
+﻿namespace E02_EF6_PublishingCompany_v1.Migrations
 {
     using D00_Utility;
-    using E02_EF6_PublishingCompany.Class;
-    using E02_EF6_PublishingCompany.Context;
+    using E02_EF6_PublishingCompany_v1.Class;
+    using E02_EF6_PublishingCompany_v1.Context;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;

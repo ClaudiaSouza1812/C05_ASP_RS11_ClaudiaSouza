@@ -5,12 +5,12 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using E02_EF6_PublishingCompany.Interfaces;
-using E02_EF6_PublishingCompany.Context;
+using E02_EF6_PublishingCompany_v1.Interfaces;
+using E02_EF6_PublishingCompany_v1.Context;
 using D00_Utility;
 using System.Data.Common;
 
-namespace E02_EF6_PublishingCompany.Class
+namespace E02_EF6_PublishingCompany_v1.Class
 {
     internal class Book : IBookRepository
     {

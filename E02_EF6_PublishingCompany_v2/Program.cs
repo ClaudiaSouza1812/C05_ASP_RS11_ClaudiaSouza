@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using D00_Utility;
-using E02_EF6_PublishingCompany.Class;
-using E02_EF6_PublishingCompany.Context;
-using E02_EF6_PublishingCompany.Interfaces;
-using E02_EF6_PublishingCompany.Migrations;
+using E02_EF6_PublishingCompany_v2.Class;
+using E02_EF6_PublishingCompany_v2.Context;
+using E02_EF6_PublishingCompany_v2.Interfaces;
+using E02_EF6_PublishingCompany_v2.Migrations;
 
-namespace E02_EF6_PublishingCompany
+namespace E02_EF6_PublishingCompany_v2
 {
     internal class Program
     {

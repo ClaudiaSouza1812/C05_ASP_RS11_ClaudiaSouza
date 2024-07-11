@@ -1,4 +1,4 @@
-﻿namespace E02_EF6_PublishingCompany.Migrations
+﻿namespace E02_EF6_PublishingCompany_v1.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

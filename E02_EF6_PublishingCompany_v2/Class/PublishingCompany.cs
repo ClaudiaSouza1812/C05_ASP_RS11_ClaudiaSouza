@@ -1,6 +1,6 @@
 ﻿using D00_Utility;
-using E02_EF6_PublishingCompany.Context;
-using E02_EF6_PublishingCompany.Interfaces;
+using E02_EF6_PublishingCompany_v2.Context;
+using E02_EF6_PublishingCompany_v2.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E02_EF6_PublishingCompany.Class
+namespace E02_EF6_PublishingCompany_v2.Class
 {
     internal class PublishingCompany : IPublishingCompanyRepository
     {
@@ -37,11 +37,7 @@ namespace E02_EF6_PublishingCompany.Class
 
         public void CreatePublishingCompany(PublishingCompany publishingCompany, PublishingCompanyContext db)
         {
-            Utility.WriteTitle("Create Publishing Company", "", "\n\n"); 
-
-            Utility.WriteMessage("Enter the name of the publishing company: ", "", "");
-
-            publishingCompany.PublishingCompanyName = Console.ReadLine();
+            publishingCompany.PublishingCompanyName = "Editora 2";
 
             db.PublishingCompanies.Add(publishingCompany);
             db.SaveChanges();
