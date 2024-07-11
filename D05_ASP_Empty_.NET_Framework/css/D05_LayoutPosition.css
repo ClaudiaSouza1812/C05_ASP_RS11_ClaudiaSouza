@@ -1,0 +1,30 @@
+﻿@import "reset.css";
+
+.split {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    border: 1px solid white;
+    margin: 10px;
+}
+
+.left {
+    left: 0;
+    background-color: black;
+}
+
+.right {
+    right: 0;
+    background-color: black;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered img {
+    width: 75%;
+}

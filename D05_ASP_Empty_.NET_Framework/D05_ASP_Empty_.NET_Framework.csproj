@@ -69,14 +69,19 @@
   <ItemGroup>
     <Content Include="css\D03_CSS_External.css" />
     <Content Include="css\D04_CSS_LayoutFloat.css" />
+    <Content Include="css\D05_LayoutPosition.css" />
+    <Content Include="css\reset.css" />
     <Content Include="html\D01_HTML_PageStructureHTML5_v1.html" />
     <Content Include="html\D01_HTML_PageStructureHTML5_v2.html" />
     <Content Include="html\D02_HTML_Links&amp;Media.html" />
     <Content Include="html\D03_CSS_External.html" />
     <Content Include="html\D04_CSS_LayoutFloat.html" />
+    <Content Include="html\D05_LayoutPosition.html" />
+    <Content Include="media\google02.jpg" />
     <Content Include="media\img01.jpg" />
     <Content Include="media\La Casa De Papel - Bella Ciao [Lyrics] %28Money Heist%29 [TubeRipper.cc].m4a" />
     <Content Include="media\mov_bbb.mp4" />
+    <Content Include="media\w301.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
