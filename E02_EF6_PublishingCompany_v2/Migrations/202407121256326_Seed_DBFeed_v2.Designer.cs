@@ -7,13 +7,13 @@ namespace E02_EF6_PublishingCompany_v2.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.5.1")]
-    public sealed partial class Seed_DBFeed : IMigrationMetadata
+    public sealed partial class Seed_DBFeed_v2 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Seed_DBFeed));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Seed_DBFeed_v2));
         
         string IMigrationMetadata.Id
         {
-            get { return "202407081516120_Seed_DBFeed"; }
+            get { return "202407121256326_Seed_DBFeed_v2"; }
         }
         
         string IMigrationMetadata.Source

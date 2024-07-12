@@ -5,10 +5,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FDCB838D-6CF8-4810-968A-769D859AB3BF}</ProjectGuid>
+    <ProjectGuid>{F3F26F77-1518-4995-A953-F91FC134AA0E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>E02_EF6_PublishingCompany_v2</RootNamespace>
-    <AssemblyName>E02_EF6_PublishingCompany_v2</AssemblyName>
+    <RootNamespace>E02_EF6_PublishingCompany_v3</RootNamespace>
+    <AssemblyName>E02_EF6_PublishingCompany_v3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -53,35 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Book.cs" />
-    <Compile Include="Class\Genre.cs" />
-    <Compile Include="Class\PublishingCompany.cs" />
-    <Compile Include="Context\PublishingCompanyContext.cs" />
-    <Compile Include="Interfaces\IBookRepository.cs" />
-    <Compile Include="Interfaces\IGenreRepository.cs" />
-    <Compile Include="Interfaces\IPublishingCompanyRepository.cs" />
-    <Compile Include="Migrations\202407121256326_Seed_DBFeed_v2.cs" />
-    <Compile Include="Migrations\202407121256326_Seed_DBFeed_v2.Designer.cs">
-      <DependentUpon>202407121256326_Seed_DBFeed_v2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\RS11\02_OOP\03_CSharp_A\C04_CSA_RS11_ClaudiaSouza_A2_CSharpAdvanced\D00_Utility\D00_Utility.csproj">
-      <Project>{f9bde1aa-9e8b-48cb-a240-4cf0c547eef8}</Project>
-      <Name>D00_Utility</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202407121256326_Seed_DBFeed_v2.resx">
-      <DependentUpon>202407121256326_Seed_DBFeed_v2.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
