@@ -22,7 +22,6 @@
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
 
-            Utility.SetUnicodeConsole();
 
             using (var db = new PublishingCompanyContext())
             {
@@ -58,8 +57,6 @@
                 #endregion
 
             }
-
-            Utility.TerminateConsole();
 
         }
     }
