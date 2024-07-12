@@ -1,15 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using D00_Utility;
-using E02_EF6_PublishingCompany_v2.Class;
-using E02_EF6_PublishingCompany_v2.Context;
-using E02_EF6_PublishingCompany_v2.Interfaces;
-using E02_EF6_PublishingCompany_v2.Migrations;
-
-namespace E02_EF6_PublishingCompany_v2
+﻿namespace E02_EF6_PublishingCompany_v2
 {
     internal class Program
     {
@@ -37,8 +26,8 @@ namespace E02_EF6_PublishingCompany_v2
                 4. DbContext
             */
 
-         
-            
+
+
         }
     }
 }

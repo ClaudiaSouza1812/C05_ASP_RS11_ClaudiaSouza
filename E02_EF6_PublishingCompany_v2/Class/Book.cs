@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using E02_EF6_PublishingCompany_v2.Interfaces;
+﻿using D00_Utility;
 using E02_EF6_PublishingCompany_v2.Context;
-using D00_Utility;
-using System.Data.Common;
+using E02_EF6_PublishingCompany_v2.Interfaces;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 namespace E02_EF6_PublishingCompany_v2.Class
 {
@@ -57,7 +52,7 @@ namespace E02_EF6_PublishingCompany_v2.Class
             db.SaveChanges();
         }
 
-        
+
         public void ShowBook(PublishingCompanyContext db)
         {
             var query = db.Books.Select(b => b).OrderBy(b => b.BookId);

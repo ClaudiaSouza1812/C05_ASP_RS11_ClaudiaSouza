@@ -1,12 +1,8 @@
 ﻿namespace E02_EF6_PublishingCompany_v2.Migrations
 {
-    using D00_Utility;
     using E02_EF6_PublishingCompany_v2.Class;
     using E02_EF6_PublishingCompany_v2.Context;
-    using System;
-    using System.Data.Entity;
     using System.Data.Entity.Migrations;
-    using System.Linq;
 
     internal sealed class Configuration : DbMigrationsConfiguration<PublishingCompanyContext>
     {
@@ -37,21 +33,21 @@
                 #endregion
 
                 #region Genre
-                
+
                 Genre genre = new Genre();
 
                 genre.CreateGenre(genre, db);
 
                 genre.ShowGenre(db);
-                
+
                 #endregion
 
                 #region Book
-                
+
                 Book book = new Book();
 
                 book.CreateBook(book, publishingCompany, genre, db);
-                
+
                 book.ShowBook(db);
 
                 #endregion

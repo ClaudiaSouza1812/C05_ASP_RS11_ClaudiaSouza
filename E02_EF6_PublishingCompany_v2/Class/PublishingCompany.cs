@@ -1,15 +1,10 @@
 ﻿using D00_Utility;
 using E02_EF6_PublishingCompany_v2.Context;
 using E02_EF6_PublishingCompany_v2.Interfaces;
-using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace E02_EF6_PublishingCompany_v2.Class
 {
@@ -18,7 +13,7 @@ namespace E02_EF6_PublishingCompany_v2.Class
         #region Scalar Properties
 
         public int PublishingCompanyId { get; set; }
-        
+
         [Required]
         [Column("Publisher", TypeName = "nvarchar")]
         [StringLength(50, ErrorMessage = "Limite de 50 caracteres")]

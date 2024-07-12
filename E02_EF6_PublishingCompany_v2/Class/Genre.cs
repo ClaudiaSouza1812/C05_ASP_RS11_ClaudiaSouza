@@ -1,13 +1,10 @@
-﻿using System;
+﻿using D00_Utility;
+using E02_EF6_PublishingCompany_v2.Context;
+using E02_EF6_PublishingCompany_v2.Interfaces;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using E02_EF6_PublishingCompany_v2.Interfaces;
-using E02_EF6_PublishingCompany_v2.Context;
-using D00_Utility;
+using System.Linq;
 
 namespace E02_EF6_PublishingCompany_v2.Class
 {
