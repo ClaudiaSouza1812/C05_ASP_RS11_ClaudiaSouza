@@ -37,7 +37,7 @@ namespace E02_EF6_PublishingCompany_v2.Class
 
         public void CreatePublishingCompany(PublishingCompany publishingCompany, PublishingCompanyContext db)
         {
-            publishingCompany.PublishingCompanyName = "Editora 2";
+            publishingCompany.PublishingCompanyName = "Editora 01";
 
             db.PublishingCompanies.Add(publishingCompany);
             db.SaveChanges();

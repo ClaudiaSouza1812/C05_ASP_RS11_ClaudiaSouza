@@ -60,9 +60,9 @@
     <Compile Include="Interfaces\IBookRepository.cs" />
     <Compile Include="Interfaces\IGenreRepository.cs" />
     <Compile Include="Interfaces\IPublishingCompanyRepository.cs" />
-    <Compile Include="Migrations\202407121256326_Seed_DBFeed_v2.cs" />
-    <Compile Include="Migrations\202407121256326_Seed_DBFeed_v2.Designer.cs">
-      <DependentUpon>202407121256326_Seed_DBFeed_v2.cs</DependentUpon>
+    <Compile Include="Migrations\202407121329386_01_initial.cs" />
+    <Compile Include="Migrations\202407121329386_01_initial.Designer.cs">
+      <DependentUpon>202407121329386_01_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -79,8 +79,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202407121256326_Seed_DBFeed_v2.resx">
-      <DependentUpon>202407121256326_Seed_DBFeed_v2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202407121329386_01_initial.resx">
+      <DependentUpon>202407121329386_01_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
