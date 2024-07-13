@@ -32,10 +32,10 @@ namespace E02_EF6_PublishingCompany_v2.Class
 
         public void CreatePublishingCompany(PublishingCompany publishingCompany, PublishingCompanyContext db)
         {
-            publishingCompany.PublishingCompanyName = "Editora 01";
+            publishingCompany.PublishingCompanyId = 1;
 
-            db.PublishingCompanies.Add(publishingCompany);
-            db.SaveChanges();
+            //db.PublishingCompanies.Add(publishingCompany);
+            //db.SaveChanges();
         }
 
         public void ShowPublishingCompany(PublishingCompanyContext db)

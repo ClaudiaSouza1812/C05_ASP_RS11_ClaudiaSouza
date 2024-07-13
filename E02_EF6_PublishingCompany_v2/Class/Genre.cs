@@ -32,10 +32,17 @@ namespace E02_EF6_PublishingCompany_v2.Class
 
         public void CreateGenre(Genre genre, PublishingCompanyContext db)
         {
-            genre.GenreName = "SyFy";
+            // genre.GenreId = 1;
 
-            db.Genres.Add(genre);
-            db.SaveChanges();
+            string[] genres = {"Drama", "Terror"};
+
+            foreach (string item in genres)
+            {
+                genre.GenreName = item;
+                db.Genres.Add(genre);
+                db.SaveChanges();
+            }
+
         }
 
         public void ShowGenre(PublishingCompanyContext db)

@@ -64,6 +64,18 @@
     <Compile Include="Migrations\202407121329386_01_initial.Designer.cs">
       <DependentUpon>202407121329386_01_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202407131743529_02_add_book.cs" />
+    <Compile Include="Migrations\202407131743529_02_add_book.Designer.cs">
+      <DependentUpon>202407131743529_02_add_book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407131756173_03_addGenres.cs" />
+    <Compile Include="Migrations\202407131756173_03_addGenres.Designer.cs">
+      <DependentUpon>202407131756173_03_addGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407131757471_04_addGenres.cs" />
+    <Compile Include="Migrations\202407131757471_04_addGenres.Designer.cs">
+      <DependentUpon>202407131757471_04_addGenres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,6 +93,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202407121329386_01_initial.resx">
       <DependentUpon>202407121329386_01_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407131743529_02_add_book.resx">
+      <DependentUpon>202407131743529_02_add_book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407131756173_03_addGenres.resx">
+      <DependentUpon>202407131756173_03_addGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407131757471_04_addGenres.resx">
+      <DependentUpon>202407131757471_04_addGenres.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
