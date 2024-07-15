@@ -1,6 +1,7 @@
 ﻿using D00_Utility;
 using E02_EF6_PublishingCompany_v2.Context;
 using E02_EF6_PublishingCompany_v2.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -30,12 +31,28 @@ namespace E02_EF6_PublishingCompany_v2.Class
 
         #region Methods
 
-        public void CreatePublishingCompany(PublishingCompany publishingCompany, PublishingCompanyContext db)
+        public void CreatePublishingCompany(PublishingCompanyContext db)
         {
-            publishingCompany.PublishingCompanyId = 1;
+            string[] publishingCompanies = { "Editora 01", "Editora 02", "Editora 03" };
 
-            //db.PublishingCompanies.Add(publishingCompany);
-            //db.SaveChanges();
+            try
+            {
+                var dbCompanyNames = db.PublishingCompanies.Select(p => p.PublishingCompanyName).ToHashSet(StringComparer.OrdinalIgnoreCase);
+
+                var newPublishingCompanies = publishingCompanies
+                    .Where(name => !dbCompanyNames.Contains(name))
+                    .Select(name => new PublishingCompany { PublishingCompanyName = name }).ToHashSet();
+
+                if (newPublishingCompanies.Any())
+                {
+                    db.PublishingCompanies.AddRange(newPublishingCompanies);
+                    db.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                Utility.WriteMessage($"Error: {ex.Message}", "", "\n");
+            }
         }
 
         public void ShowPublishingCompany(PublishingCompanyContext db)

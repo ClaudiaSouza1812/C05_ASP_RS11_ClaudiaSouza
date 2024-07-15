@@ -30,19 +30,18 @@ namespace E02_EF6_PublishingCompany_v2.Class
 
         #region Methods and Functions
 
-        public void CreateGenre(Genre genre, PublishingCompanyContext db)
+        public void CreateGenre(PublishingCompanyContext db)
         {
-            // genre.GenreId = 1;
-
             string[] genres = {"Drama", "Terror"};
 
-            foreach (string item in genres)
+            foreach (string genreName in genres)
             {
-                genre.GenreName = item;
+                Genre genre = new Genre();
+                genre.GenreName = genreName;
                 db.Genres.Add(genre);
-                db.SaveChanges();
             }
 
+            db.SaveChanges();
         }
 
         public void ShowGenre(PublishingCompanyContext db)

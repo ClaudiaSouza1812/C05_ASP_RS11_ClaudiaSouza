@@ -5,7 +5,7 @@ namespace E02_EF6_PublishingCompany_v2.Interfaces
 {
     internal interface IPublishingCompanyRepository
     {
-        void CreatePublishingCompany(PublishingCompany publishingCompany, PublishingCompanyContext db);
+        void CreatePublishingCompany(PublishingCompanyContext db);
 
         void ShowPublishingCompany(PublishingCompanyContext db);
     }

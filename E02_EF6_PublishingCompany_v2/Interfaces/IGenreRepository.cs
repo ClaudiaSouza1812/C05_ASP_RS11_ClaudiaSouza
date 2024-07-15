@@ -5,7 +5,7 @@ namespace E02_EF6_PublishingCompany_v2.Interfaces
 {
     internal interface IGenreRepository
     {
-        void CreateGenre(Genre genre, PublishingCompanyContext db);
+        void CreateGenre(PublishingCompanyContext db);
 
         void ShowGenre(PublishingCompanyContext db);
     }

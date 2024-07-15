@@ -21,17 +21,17 @@
 
             using (var db = new PublishingCompanyContext())
             {
-                /*
+                
                 #region PublishingCompany
 
                 PublishingCompany publishingCompany = new PublishingCompany();
 
-                publishingCompany.CreatePublishingCompany(publishingCompany, db);
+                publishingCompany.CreatePublishingCompany(db);
 
                 publishingCompany.ShowPublishingCompany(db);
 
                 #endregion
-                */
+                /*
                 #region Genre
 
                 Genre genre = new Genre();
@@ -41,6 +41,7 @@
                 genre.ShowGenre(db);
 
                 #endregion
+                */
                 /*
                 #region Book
 
