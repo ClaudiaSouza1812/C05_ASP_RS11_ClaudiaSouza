@@ -1,12 +1,22 @@
 ﻿@import "resert.css";
 
-a {
-    color: green;
+body {
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
-.table01, th, td{
+a {
+    color: green;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: red;
+        text-decoration: underline;
+    }
+
+.table01, th, td {
     border: 1px solid black;
-    border-width: 1px;
 }
 
 .table02 {
@@ -18,19 +28,14 @@ a {
     background-color: aquamarine;
 }
 
-.th02 {
-    background-color: orange;
-    color: white;
-}
+    .table02 th {
+        background-color: orange;
+        color: white;
+    }
 
-.td02 {
-    background-color: lightgreen;
-}
-
-p {
-    background-color: yellow;
-    width: 50px;
-}
+    .table02 td {
+        background-color: lightgreen;
+    }
 
 .right {
     text-align: right;
