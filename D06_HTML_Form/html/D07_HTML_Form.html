@@ -2,14 +2,75 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>D06 HTML - Form</title>
     <link href="../css/D07_HTML_Form.css" rel="stylesheet" />
 </head>
 <body>
-    <section>
-        <article>
-            <
-        </article>
-    </section>
+    <form>
+        <section>
+            <article>
+                <header>
+                    <h1><a href="https://www.w3schools.com/" target="_blank">Form</a></h1>
+                </header>
+            </article>
+        </section>
+        <section>
+            <article>
+                <form>
+                    <label for="fname">Name</label><br />
+                    <input type="text" id="fname" name="fname" placeholder="Nome próprio" /><br /><br />
+                    <label for="lname">Last Name</label><br />
+                    <input type="text" id="lname" name="lname" value="RS" />
+                </form>
+            </article>
+        </section><br /><br />
+        <section>
+            <article>
+                <form>
+                    <fieldset>
+                        <legend>Area 1</legend>
+                        <input type="radio" id="ti" name="area01" value="Tecnologias de Informação" />
+                        <label for="ti">Tecnologias de Informação</label><br />
+                        <input type="radio" id="linguas" name="area01" value="linguas" />
+                        <label for="linguas">Línguas</label>
+                    </fieldset>
+                </form>
+            </article>
+        </section><br /><br />
+        <section>
+            <article>
+                <form>
+                    <fieldset>
+                        <legend>Area 2</legend>
+                        <select id="cursos" name="cursos">
+                            <option value="rh">RH</option>
+                            <option value="gestão">Gestão</option>
+                            <option value="softskills">Softskills</option>
+                        </select>
+                    </fieldset>
+                </form>
+            </article>
+        </section><br /><br /><br />
+        <section>
+            <article>
+                <form>
+                    <fieldset>
+                        <legend>Subarea</legend>
+                        <input type="checkbox" id="dev" name="subarea" value="dev" />
+                        <label for="dev">Dev</label><br />
+                        <input type="checkbox" id="db" name="subarea" value="db" />
+                        <label for="db">DB</label><br />
+                        <input type="checkbox" id="cloud" name="subarea" value="cloud" />
+                        <label for="cloud">Cloud</label><br />
+                    </fieldset>
+                </form>
+            </article>
+        </section><br /><br /><br />
+        <input type="submit" id="enviar" name="enviar" value="Enviar" />
+        <input type="reset" id="limpar" name="limpar" value="Limpar" />
+    </form>
+    
+    
 </body>
 </html>

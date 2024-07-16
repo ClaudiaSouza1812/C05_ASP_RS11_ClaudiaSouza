@@ -1,4 +1,12 @@
 ﻿@import "reset.css";
 
 body {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+fieldset {
+    width: 90%;
+    min-width: 50px;
 }
