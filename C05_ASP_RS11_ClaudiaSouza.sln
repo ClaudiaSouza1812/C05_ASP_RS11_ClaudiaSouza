@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E02_EF6_PublishingCompany_v
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D07_HTML_Form", "D06_HTML_Form\D07_HTML_Form.csproj", "{03F91775-FDFE-4680-9B15-C5B0F949F17B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E03_MVC_NET_Core_Person", "E03_MVC_NET_Core_Person\E03_MVC_NET_Core_Person.csproj", "{57355DE7-2535-410F-8DAD-083F8B45C8BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{03F91775-FDFE-4680-9B15-C5B0F949F17B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03F91775-FDFE-4680-9B15-C5B0F949F17B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03F91775-FDFE-4680-9B15-C5B0F949F17B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57355DE7-2535-410F-8DAD-083F8B45C8BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57355DE7-2535-410F-8DAD-083F8B45C8BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57355DE7-2535-410F-8DAD-083F8B45C8BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57355DE7-2535-410F-8DAD-083F8B45C8BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
