@@ -1,0 +1,43 @@
+﻿@import "reset.css";
+
+body {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: red;
+        text-decoration: underline;
+    }
+
+.table01, th, td {
+    border: 1px solid black;
+}
+
+.table02 {
+    border-top: 3px solid blue;
+    border-bottom: 3px solid blue;
+    border-left: 3px solid blue;
+    border-right: 3px solid blue;
+    border-collapse: collapse;
+    background-color: aquamarine;
+}
+
+    .table02 th {
+        background-color: orange;
+        color: white;
+    }
+
+    .table02 td {
+        background-color: lightgreen;
+    }
+
+.right {
+    text-align: right;
+    width: 50px;
+}

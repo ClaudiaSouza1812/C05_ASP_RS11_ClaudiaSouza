@@ -1,0 +1,39 @@
+﻿@import "reset.css";
+
+#sec01 {
+    width: 100%;
+    height: 80%;
+}
+
+#art01 {
+    width: 50%;
+    height: 100%;
+    background-color: cadetblue;
+    float: left;
+}
+
+#art02 {
+    width: 20%;
+    height: 100%;
+    background-color: coral;
+    float: left;
+}
+
+#art03 {
+    width: 30%;
+    height: 100%;
+    background-color: darkgray;
+    float: left;
+}
+
+#sec02 {
+    width: 100%;
+    height: 80%;
+}
+
+#art04 {
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    float: none;
+}
