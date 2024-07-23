@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "D04_MVC_NET_Core": {
+    "D04_MVC_NET_Core_DatabaseFirst": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
