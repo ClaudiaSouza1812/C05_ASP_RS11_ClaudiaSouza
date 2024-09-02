@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace D04_MVC_NET_Core.Models
+namespace D04_MVC_NET_Core_DatabaseFirst.Models
 {
     public partial class Address
     {

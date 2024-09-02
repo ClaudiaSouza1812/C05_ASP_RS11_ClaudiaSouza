@@ -1,8 +1,8 @@
-﻿using D04_MVC_NET_Core.Models;
+﻿using D04_MVC_NET_Core_DatabaseFirst.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace D04_MVC_NET_Core.Controllers
+namespace D04_MVC_NET_Core_DatabaseFirst.Controllers
 {
     public class HomeController : Controller
     {

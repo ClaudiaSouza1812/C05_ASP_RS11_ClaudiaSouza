@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using D04_MVC_NET_Core.Models;
+using D04_MVC_NET_Core_DatabaseFirst.Models;
 
-namespace D04_MVC_NET_Core.Controllers
+namespace D04_MVC_NET_Core_DatabaseFirst.Controllers
 {
     public class ContactController : Controller
     {

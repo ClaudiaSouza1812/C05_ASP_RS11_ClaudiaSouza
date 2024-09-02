@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace D04_MVC_NET_Core.Models
+namespace D04_MVC_NET_Core_DatabaseFirst.Models
 {
     public partial class ContactDB_EFCore_DBFirst_ClaudiaSouzaContext : DbContext
     {

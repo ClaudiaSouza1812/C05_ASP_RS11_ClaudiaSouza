@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D01_EF6_DatabaseFirst", "D01_EF6_DatabaseFirst\D01_EF6_DatabaseFirst.csproj", "{059BFF3D-4148-4F7D-A9B9-890711A22E94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D00_Utility", "..\..\..\..\..\RS11\02_OOP\03_CSharp_A\C04_CSA_RS11_ClaudiaSouza_A2_CSharpAdvanced\D00_Utility\D00_Utility.csproj", "{F9BDE1AA-9E8B-48CB-A240-4CF0C547EEF8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D00_Utility", "..\..\02_OOP\03_CSharp_A\C04_CSA_RS11_ClaudiaSouza_A2_CSharpAdvanced\D00_Utility\D00_Utility.csproj", "{F9BDE1AA-9E8B-48CB-A240-4CF0C547EEF8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E01_EF6_AdventureWorks", "E01_EF6_AdventureWorks\E01_EF6_AdventureWorks.csproj", "{16617CCA-06DD-4930-B49C-D246801087B7}"
 EndProject
@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D02_EF6_CodeFirst", "D02_EF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D03_MVC_.NET_Framework", "D03_MVC_.NET_Framework\D03_MVC_.NET_Framework.csproj", "{79A808EA-8F28-45EE-8478-9B64B31D2848}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "D04_MVC_NET_Core", "D04_MVC_NET_Core\D04_MVC_NET_Core.csproj", "{246D797A-345F-473B-806A-B999B83B9D28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "D04_MVC_NET_Core_DatabaseFirst", "D04_MVC_NET_Core\D04_MVC_NET_Core_DatabaseFirst.csproj", "{246D797A-345F-473B-806A-B999B83B9D28}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D05_ASP_Empty_.NET_Framework", "D05_ASP_Empty_.NET_Framework\D05_ASP_Empty_.NET_Framework.csproj", "{AF565C80-6E70-45F3-ABFD-7BE1CC44BE9A}"
 EndProject
